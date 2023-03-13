@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Skate</title>
+    <link rel="icon" type="image/x-icon" href="icons/logo.ico">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    
+    <header>
+            <a href="index.html" class="logo"><img src="logo/logo.png"></a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="encomendar.html">Encomendar</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="aboutus.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <script>
+            hambuger = document.querySelector(".hamburger");
+            hambuger.onclick = function() {
+                navBar = document.querySelector(".navbar");
+                navBar.classList.toggle("active");
+            }
+    </script>
+
+    <script type="text/javascript">
+            function imgSlider(anything){
+            document.querySelector('.skates').src = anything
+        }
+    </script> 
+        
+    <section class="home">
+        <div class="circle"></div>
+        <div class="content">
+
+            <div class="textbox">
+                 <h2>Não é apenas um skate é um skate de outra <span> galáxia com Alien Skate.</span></h2>
+                 <p>Somos uma loja personalizável de skates e griptapes, entramos neste negócio em 2022 e sempre fornecemos aos nossos clientes a melhor qualidade, qualquer questão por favor contacte-nos.</p>
+                 <a href="contact.html">Contacto</a>
+                 <br>
+                 <img class="qrcode" src="logo/AlienSkate.png">
+            </div>
+                
+            <div class="imgbox">
+                <img src="products/product8.png" class="skates">
+            </div>
+
+        </div>
+
+        <ul class="thumb">
+            <li><img src="products/product8.png" onclick="imgSlider('products/product8.png');"></li>
+            <li><img src="products/product1.png" onclick="imgSlider('products/product1.png')"></li>
+            <li><img src="products/product4.png" onclick="imgSlider('products/product4.png')"></li>
+        </ul>
+        <br><br>
+        <div>
+            <footer class="rodape">
+                AlienSkates ©2023
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
