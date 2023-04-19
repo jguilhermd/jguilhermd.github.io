@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Skate</title>
+    <link rel="icon" type="image/x-icon" href="icons/logo.ico">
+
+    <link rel="stylesheet" href="css/aboutus.css">
+    <script src="https://kit.fontawesome.com/45a4c51003.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="contact">
+        <header>
+            <a href="index.html" class="logo"><img src="logo/logo.png"></a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="encomendar.html">Encomendar</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="aboutus.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <script>
+            hambuger = document.querySelector(".hamburger");
+            hambuger.onclick = function() {
+                navBar = document.querySelector(".navbar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    <section class="about-s">
+        <div class="about">
+            <img class="imgus"src="logo/aboutus.png">
+            <div class="text-s">
+                <h1>Quem Somos?</h1>
+                <p>
+                    Nós somos uma equipe de entusiastas de skate que acreditam que cada pessoa é única e tem sua própria forma de se expressar no esporte. Foi por isso que decidimos criar uma marca que oferece aos skatistas de todo o mundo a oportunidade de personalizar seus próprios griptapes e skates.
+                    <br>Começamos a AlienSkate para oferecer algo novo e exclusivo para a comunidade de skatistas, permitindo que cada pessoa expresse sua individualidade através de seus equipamentos de skate.
+                </p>
+                <div class="rd">
+                    <div class="icon"><a href="https://www.instagram.com/guilhermeeoff/"><i class="fa-brands fa-instagram"></i></a></div>
+                    <div class="icon"><a href="https://www.facebook.com/profile.php?id=100087869808635"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        <footer class="rodape">
+            AlienSkates ©2023
+        </footer>
+    </div>
+</body>
+</html>
